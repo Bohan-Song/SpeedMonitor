@@ -98,12 +98,19 @@ static const char *suffixes[] = {
 
 void humanize_digit(long double number, struct human_readble_string *string) {
 	unsigned int base = 1024;
-	unsigned int max = 9999; // 4 digits at most
+	unsigned int max = 1024;
 	unsigned int count;
 
 	for (count = 0; number > max; count++)
 		number /= base;
-
-	string->number = number;
-	string->suffix = (char *)suffixes[count];
+    
+    // if speed is less than 1KB/s calculate it to KB
+    // because byte/s is really nonsence
+    if (count < 1) {
+        string->number = number / max;
+        string->suffix = (char *)suffixes[1];
+    } else {
+        string->number = number;
+        string->suffix = (char *)suffixes[count];
+    }
 }
