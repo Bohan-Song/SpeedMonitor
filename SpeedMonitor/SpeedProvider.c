@@ -85,15 +85,15 @@ void fill_interface_data(struct ifmibdata *ifmib) {
 }
 
 static const char *suffixes[] = {
-	"bytes",
-	"KiB",
-	"MiB",
-	"GiB",
-	"TiB",
-	"PiB",
-	"EiB",
-	"ZiB",
-	"YiB"
+	"b",
+	"KB",
+	"MB",
+	"GB",
+	"TB",
+	"PB",
+	"EB",
+	"ZB",
+	"YB"
 };
 
 void humanize_digit(long double number, struct human_readble_string *string) {
