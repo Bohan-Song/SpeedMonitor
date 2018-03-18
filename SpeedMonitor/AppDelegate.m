@@ -75,14 +75,14 @@
       initWithObjectsAndKeys:font, NSFontAttributeName, nil];
 
   [speedString setAttributedString: [[NSAttributedString alloc]
-              initWithString:[NSString stringWithFormat:@"⇡%.1Lf%s\n",
+              initWithString:[NSString stringWithFormat:@"⇡  %.1Lf%s\n",
                                                         string.number,
                                                         string.suffix]
                   attributes:attributes]];
 
   humanize_digit(rx_bytes, &string);
   [speedString appendAttributedString: [[NSAttributedString alloc]
-			   initWithString:[NSString stringWithFormat:@"⇣%.1Lf%s",
+			   initWithString:[NSString stringWithFormat:@"⇣  %.1Lf%s",
 														 string.number,
 														 string.suffix]
                            attributes:attributes]];
