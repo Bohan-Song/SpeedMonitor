@@ -12,8 +12,6 @@
 		42A5BF1A1CA27204003FF0E1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42A5BF191CA27204003FF0E1 /* ViewController.m */; };
 		42A5BF1C1CA27204003FF0E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42A5BF1B1CA27204003FF0E1 /* Assets.xcassets */; };
 		42A5BF1F1CA27204003FF0E1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42A5BF1D1CA27204003FF0E1 /* Main.storyboard */; };
-		42A5BF2A1CA27204003FF0E1 /* SpeedMonitorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 42A5BF291CA27204003FF0E1 /* SpeedMonitorTests.m */; };
-		42A5BF351CA27204003FF0E1 /* SpeedMonitorUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 42A5BF341CA27204003FF0E1 /* SpeedMonitorUITests.m */; };
 		42B8661A1CA2A0EB003BA63A /* SpeedProvider.c in Sources */ = {isa = PBXBuildFile; fileRef = 42B866181CA2A0EB003BA63A /* SpeedProvider.c */; };
 /* End PBXBuildFile section */
 
@@ -45,11 +43,7 @@
 		42A5BF1E1CA27204003FF0E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		42A5BF201CA27204003FF0E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		42A5BF251CA27204003FF0E1 /* SpeedMonitorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpeedMonitorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		42A5BF291CA27204003FF0E1 /* SpeedMonitorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpeedMonitorTests.m; sourceTree = "<group>"; };
-		42A5BF2B1CA27204003FF0E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		42A5BF301CA27204003FF0E1 /* SpeedMonitorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpeedMonitorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		42A5BF341CA27204003FF0E1 /* SpeedMonitorUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpeedMonitorUITests.m; sourceTree = "<group>"; };
-		42A5BF361CA27204003FF0E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		42B866181CA2A0EB003BA63A /* SpeedProvider.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = SpeedProvider.c; sourceTree = "<group>"; };
 		42B866191CA2A0EB003BA63A /* SpeedProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpeedProvider.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -83,8 +77,6 @@
 			isa = PBXGroup;
 			children = (
 				42A5BF111CA27204003FF0E1 /* SpeedMonitor */,
-				42A5BF281CA27204003FF0E1 /* SpeedMonitorTests */,
-				42A5BF331CA27204003FF0E1 /* SpeedMonitorUITests */,
 				42A5BF101CA27204003FF0E1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -122,24 +114,6 @@
 				42A5BF161CA27204003FF0E1 /* main.m */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		42A5BF281CA27204003FF0E1 /* SpeedMonitorTests */ = {
-			isa = PBXGroup;
-			children = (
-				42A5BF291CA27204003FF0E1 /* SpeedMonitorTests.m */,
-				42A5BF2B1CA27204003FF0E1 /* Info.plist */,
-			);
-			path = SpeedMonitorTests;
-			sourceTree = "<group>";
-		};
-		42A5BF331CA27204003FF0E1 /* SpeedMonitorUITests */ = {
-			isa = PBXGroup;
-			children = (
-				42A5BF341CA27204003FF0E1 /* SpeedMonitorUITests.m */,
-				42A5BF361CA27204003FF0E1 /* Info.plist */,
-			);
-			path = SpeedMonitorUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -225,6 +199,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -282,7 +257,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				42A5BF2A1CA27204003FF0E1 /* SpeedMonitorTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,7 +264,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				42A5BF351CA27204003FF0E1 /* SpeedMonitorUITests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
